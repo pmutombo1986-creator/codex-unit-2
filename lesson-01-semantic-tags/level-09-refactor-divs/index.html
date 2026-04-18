@@ -3,10 +3,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Refactor challenge</title>
   </head>
   <body>
     <!-- TODO: Refactor this non-semantic layout into semantic elements without changing meaning -->
+    <!-- before : too many divs --> 
     <div class="layout">
       <div class="topbar"><h2>Logo</h2></div>
       <div class="menu"><a href="#">Menu</a></div>
@@ -16,5 +18,17 @@
       </div>
       <div class="foot">Contact info</div>
     </div>
+    <!-- after: semantic elements-->
+     <header>
+        <nav>
+          <h2>Logo</h2>
+          <a href="#">Menu</a>
+        </nav>
+     <main>
+        <h3>Content</h3>
+        <p>Some text</p>
+    </main>
+    <footer> Contact info</footer>
+    </header>
   </body>
 </html>
