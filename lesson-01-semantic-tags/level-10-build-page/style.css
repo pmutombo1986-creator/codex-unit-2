@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    display: flex; /* makes the list look horizontal */
+    gap: 20px; /* create space between the links */
+    list-style: none;
+}
+
+main {
+    display: flex;
+    gap: 40px;
+    padding: 32px;
+}
+
+section {
+    flex: 3; /* should takes up 3/4 of the space */
+}
+
+article {
+    flex: 1; /* Should takes up 1/4 of the space */
+}
+
+/* the reason we're using the flex box here is because 
+it easily center content inside its parent div without
+us doing anything manually to adjust it. also it adds
+equal height in the columns automatically strech to 
+the same height, even if they have different amount of 
+content inside it. Finally, it provides an order 
+control where you can change the visual order of the 
+elements without touching it's actual website source 
+or html source. */

@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device=with, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Semantic page starter</title>
   </head>
   <body>
@@ -15,20 +16,43 @@
     </div>
     <!-- after -->
     <header>
-        <h1>Page title</h1>
-        <nav>...link.. <a href="#home">Home</a></nav>
-    </header>    
-    <main>
-      <section>
-        <h2>Section area</h2>
-        <p>Content area...</p>
-      </section>
-      <article>
-        <h2>Article</h2>
-        <p>Content area...</p>
-      </article>
-    </main>
-    <footer>&copy;2026 My Brand</footer>
+        <h1>Web Development Basics</h1>
+        <nav>
+            <ul>
+                <li><a href="#structure">Structure</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <main>
+        <section id="structure">
+            <h2>Core Semantic Elements</h2>
+            <p>Using the right tag for the job makes your code readable and functional.</p>
+            <ul>
+                <li><code><p>header<p></code> and <code><p>footer<p></code> for landmarks.</li>
+                <li><code><p>main<p></code> for unique page content.</li>
+                <li><code><p>nav<p></code> for primary links.</li>
+            </ul>
+            <article>
+                <h3>Example: Image Accessibility</h3>
+                <img src="https://placeholder.com" alt="A simple placeholder graphic illustrating semantic layout">
+            </article>
+        </section>
+
+        <section id="benefits">
+            <h2>Why Semantics Matter</h2>
+            <ol>
+                <li>Improves <strong>SEO</strong> by helping bots understand content.</li>
+                <li>Enhances <strong>Accessibility</strong> for screen reader users.</li>
+                <li>Makes code easier to maintain for developers.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My brand Semantic Learner Portal</p>
+    </footer>
+
   </body>
 </html>
