@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "type": "chrome",
+      "name": "http://127.0.0.1:3000/lesson-01-semantic-tags/level-07-text-semantics/index.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/lesson-01-semantic-tags/level-07-text-semantics/index.html"
+    }
+  ]
+}
