@@ -6,8 +6,36 @@
     <title>Lesson 02 — Level 08</title>
   </head>
   <body>
-    <h1>Level 08 — Grouping Controls</h1>
+    <h1>Feedback for the show</h1>
     <form>
+      <fieldset>
+        <legend>Rating</legend>
+        <label >
+          Good:
+          <input type="radio" name="rating" />
+        </label>
+        
+        <lable>
+          Bad:
+          <input type="radio" name="rating" />
+        </lable>
+      </fieldset>
+        
+        <br />
+
+        <fieldset>
+          <legend>Shows</legend>
+          <label for="friday-show">Did you watch the show Friday?</label>
+          <input id="friday-show" type="checkbox" />(check for YES. Uncheck for NO.)
+          <br />
+          <label for="saturday-show">Did you watch the show on Saturday?</label>
+          <input id="saturday-show" type="checkbox" />(check for YES. Uncheck for NO.)
+          <br />
+          <label for="subscription"> &#9658 Subscribe to newsletter of Shows and Ratings </label>
+          <input id="subscription" type="checkbox" name="subscribe" /> (Optional)
+          </fieldset>
+        
+      <button type="submit">Submit rating</button>
       <!-- TODO: Group related controls using <fieldset> and describe the group with <legend> -->
     </form>
   </body>
