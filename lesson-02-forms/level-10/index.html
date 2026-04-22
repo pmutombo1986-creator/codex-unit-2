@@ -6,8 +6,56 @@
     <title>Lesson 02 — Level 10</title>
   </head>
   <body>
-    <h1>Level 10 — Debugging & Fixing Common Mistakes</h1>
+    <h1>User Info</h1>
     <form>
+    <!-- Before: with correct everything -->
+      <fieldset>
+          <legend>Login</legend>
+          <label>
+            Email:
+            <input type="email" required />
+          </label>
+          <br />
+          <label>
+            Password:
+            <input type="password" required />
+          </label>
+          <br />
+          <button type="submit">Login</button>
+        </fieldset>
+
+        <fieldset>
+          <legend>Profile</legend>
+          <lable>Height:</lable>
+          <input type="range" min="48" max="96" />
+          <br />
+          <label>Phone:</label>
+          <input type="tel" minlength="10" maxlength="10" />
+          <br />
+          <label>Age:</label>
+          <input type="number" />
+          <br />
+          <label>Picture:</label>
+          <input type="file" />
+          <br />
+        </fieldset>
+
+      <!-- After: Here are the erorrs below -->
+
+      <!-- Error 1 : Missing label /ID pairing -->
+       <input name="username" placeholder="enter username">
+
+      <!-- Error 2: Duplicate ID -->
+       <lable for="user-id">ID Number</lable>
+       <input id="user-id" name="id_num">
+
+      <!-- Error 3: Incorrect input type for an email-->
+       <label for="email">Email</label>
+       <input id="email" type="text" name="email"/>
+
+      <!-- Error 4: Missing Submit Control and Correct Name it should be Login and not Cancel-->
+       <button type="button">Cancel</button>
+        
       <!-- TODO: Fix common mistakes such as missing ids for labels, duplicate ids, or missing submit control -->
     </form>
   </body>
