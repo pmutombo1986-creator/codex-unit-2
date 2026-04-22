@@ -1,0 +1,30 @@
+/* stack fieldsets vertically with a gap */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+}
+
+/* we need to do a stack label/input rows vertically inside fieldsets */
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+/* we may need to align text and input horizontally withi each label */
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* we may want to make all the inputs to fill the remaining space */
+input {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}

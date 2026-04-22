@@ -3,11 +3,56 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
     <title>Lesson 02 — Level 11</title>
   </head>
   <body>
-    <h1>Level 11 — Integrate & Polish</h1>
+    <h1>User info</h1>
     <form>
+      <fieldset>
+          <legend>Login</legend>
+          <label>
+            Email:
+            <input type="email" required />
+          </label>
+          <br />
+          <label>
+            Username:
+            <input type="text" required />
+          </label>
+          <br />
+          <label>
+            Password:
+            <input type="password" required />
+          </label>
+          <br />
+          <button type="submit">Login</button>
+        </fieldset>
+
+        <fieldset>
+          <legend>Profile</legend>
+          <label>
+            Height:
+            <input type="range" min="48" max="96" />
+          </label>
+          <br />
+          <label>
+            Phone:
+            <input type="tel" name="phone" minlength="10" maxlength="10" />
+          </label>
+          <br />
+          <label>
+            Age:
+            <input type="number" name="age"/>
+          </label>
+          <br />
+          <label>
+            Picture:
+            <input type="file" />
+          </label>
+          <br />
+          <button type="submit">Save Profile</button>
+        </fieldset>
       <!-- TODO: Combine all pieces: inputs, labels, fieldsets, validation, and submit control -->
     </form>
   </body>
