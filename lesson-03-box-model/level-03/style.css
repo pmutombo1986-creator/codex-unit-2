@@ -3,3 +3,24 @@
   background: #eef;
 }
 /* TODO: change padding/border/margin values to see layout effects */
+
+/* Content Area */
+#demo-box {
+  background-color: #92b0d3; /* Blue */
+  width: 200px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  line-height: 100px; /* it centers the text vertically because it used to control the vertical spacing between lines */
+/*  Padding, Border and Margin properties area */
+  padding: 40px; /* for the space inside of the border (Green area), Makes the blue box bigger without pushing other elements away. */
+  border: 10px solid #666; /* for the physical wall (Gray Area) and it sits right on the edge of the padding  */
+  margin: 50px; /* for the space outside the border (orange), it pushes the entire box away from the "Padding / Border / Margin Deep Dive" header. */
+}
+
+/*Added a background color to the body to help see the margin better */
+body {
+  background-color: #f0f0f0;
+  font-family: sans-serif;
+}
+
