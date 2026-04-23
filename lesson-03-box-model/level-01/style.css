@@ -1,6 +1,17 @@
 /* Starter styles — students will add visualizations in later levels */
 .intro {
-  max-width: 600px;
+  /* max-width: 600px;
   margin: 2rem auto;
-  font-family: system-ui, sans-serif;
+  font-family: system-ui, sans-serif; */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Removes extra bottom space inherent to the inline elements */
+  margin: 20px 0; /* Adds some breathing room above and below the image */
 }
