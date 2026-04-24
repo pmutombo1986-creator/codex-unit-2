@@ -3,11 +3,31 @@
   width: 320px;
   border: 1px solid #ccc;
   padding: 8px;
+  display: flex; /* This is because i want them to be side by side */
+  gap: 10px; /* This is because i want to add some spacing between them */
 }
 .item {
   display: inline-block;
-  width: 140px;
-  padding: 12px;
-  border: 2px solid #444;
+  /* width: 140px; */
+  width: 50%; /* we're reducing and setting the width so that the two items fit and 50% is half of that sincer we're using the gaps */
+  /* padding: 12px; */
+  padding: 20px; /* we're increasing the padding here since we want it to fit inside the box */
+  /* border: 2px solid #444; */
+  border: 5px solid black; /* just to emphasize where the border is and make it more visible */
   margin: 8px;
+  background-color: lightblue; /* we're adding a lighter background color just to give it a little pop and to emphasize the difference */
+  box-sizing: border-box; /* we're using the border-box so that the padding and border don't increase the total/enitre width */
+
 }
+
+/* makes it easy to inherit from <html> */
+html {
+  box-sizing: border-box;
+}
+
+/*Why is adding box-zing: border-box works?
+because it shows that with the border-box  
+the paddiing and border are not overflowing 
+but they are pushed and put inside the box, 
+and 50% is half, which means it's exactly  half of the container.
+*/
