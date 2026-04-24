@@ -3,11 +3,27 @@
   width: 320px;
   border: 1px solid #ccc;
   padding: 8px;
+  flex-wrap: wrap; /* we're using flex to the container to allow 
+  the items to move to a new line if they run out of space horizatally.*/
+  gap: 10px; /* we're using a gap here to manage the space between the items without 
+  changing the margins.*/
 }
+
 .item {
   display: inline-block;
-  width: 160px;
+  /* width: 160px; */
+  width: 50%; /* were reducing the width, so now it's exactly half, 
+  50% regardless of the padding and border */
   padding: 12px;
   border: 2px solid #444;
   margin: 8px;
+  background-color: rgb(222, 126, 185); /* give it little pop of color */
+  box-sizing: border-box; /* we're applying it to make sure the item doesn't overflow. 
+  & we're using the border-box so that the padding and border don't increase the total/enitre width. */
+  
+}
+
+/* makes it easy to get it from the <html>, i think this is for the global fix. */
+html {
+  box-sizing: border-box;
 }
