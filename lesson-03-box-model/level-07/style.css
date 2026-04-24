@@ -3,4 +3,21 @@
   width: 200px;
   padding: 20px;
   border: 4px solid #333;
+  box-sizing: border-box;
 }
+
+/* Apply border-box to everything */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* makes it easu to inherit from <html> */
+html {
+  box-sizing: border-box;
+}
+
+/* Notes : Why do this?
+Without the global fix, for example:
+if you set a box to width: 500px and add 20px of padding, 
+the box actually becomes 540px wide. With border-box, it stays 500px, 
+which makes responsive layouts much easier to manage. */

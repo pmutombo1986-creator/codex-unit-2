@@ -1,19 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Level 07 — Box-Sizing & Responsive Considerations</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <main>
-      <h1>Box-sizing comparison</h1>
-      <div class="box" id="box-a">box A</div>
-      <div class="box" id="box-b" style="box-sizing: border-box">
-        box B (border-box)
-      </div>
-      <!-- TODO: Try adding global `*, *::before, *::after { box-sizing: border-box }` -->
+        <h1>Box-Sizing Comparison</h1>
+        
+        <!-- TODO: Try adding global `*, *::before, *::after { box-sizing: border-box }` -->
+        <!-- Both boxes will now behave the same thanks to the global CSS -->
+        <div class="box" id="box-a">Box A</div>
+        <div class="box" id="box-b">Box B</div>
     </main>
-  </body>
+</body>
 </html>
