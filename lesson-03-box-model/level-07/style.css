@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 
-/* makes it easu to inherit from <html> */
+/* makes it easy to inherit from <html> */
 html {
   box-sizing: border-box;
 }
