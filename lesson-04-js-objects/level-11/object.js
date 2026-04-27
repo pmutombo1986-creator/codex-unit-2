@@ -9,3 +9,12 @@ const book = {
 };
 book.summary = summary;
 export default book;
+
+function profile() {
+  return `${this.name} by ${this.age}`
+}
+const person = {
+  name: 'christina', age: 27, gender: 'female'
+};
+person.profile = profile;
+export default person;
