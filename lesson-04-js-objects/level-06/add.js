@@ -4,5 +4,7 @@
 // obj.age = 30;
 // export default obj;
 const obj = {};
+obj.name = 'sidney';
+obj.profession = 'coder';
 // TODO: add properties using dot notation
 export default obj;
