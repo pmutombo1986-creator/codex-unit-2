@@ -4,7 +4,12 @@
 // const user = { name: 'Ava' }
 // user.greet = greet
 // export default user
+function greet (firstName, middleName, lastName) { return 'Hi' + firstName}
 const user = {
   /* TODO: add name */
+  firstName: 'Vicky',
+  middleName: 'Christina',
+  lastName: 'Barcelona'
 };
+user.greet = greet;
 export default user;
