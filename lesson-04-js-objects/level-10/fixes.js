@@ -4,10 +4,12 @@
 
 // Buggy starter (anonymous function assigned):
 const user = { name: "Ava" };
-user.say = ???;
+user.say = say;
 
-export default user;
 
-function () {
+
+function say() {
   return "hello " + user.name;
 };
+
+export default user;
