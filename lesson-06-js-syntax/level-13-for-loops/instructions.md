@@ -13,6 +13,7 @@ Write 10 different `for` loops. Each loop must use a different start/end range a
 - Implement 10 `for` loops.
 - Each loop should have different start/end ranges.
 - Use `console.log` in each `for` to display each count.
+- Write each line from scratch; do NOT copy & paste any code. Typing each line reinforces syntax memory and debugging skills.
 
 ## Hints
 
