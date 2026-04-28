@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import answer from "../../lesson-05-terminal-commands/level-10/answer.js";
+import answer from "../lesson-05-terminal-commands/level-10/answer.js";
 
 describe("lesson-05 — level-10 challenge steps array", () => {
   it("exports an array of steps", () => {
