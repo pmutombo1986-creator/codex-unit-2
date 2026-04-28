@@ -10,28 +10,30 @@
     <form>
       <fieldset>
         <legend>Rating</legend>
-        <label >
-          Good:
-          <input type="radio" name="rating" />
-        </label>
+        <!-- Corrected: Explicitly linked using 'for' to match 'id' -->
+        <label for="good-rating">Good:</label>
+        <input type="radio" id="good-rating" name="rating" />
         
-        <lable>
-          Bad:
-          <input type="radio" name="rating" />
-        </lable>
+        <!-- Corrected: Fixed spelling of "label" and added 'for' -->
+        <label for="bad-rating">Bad:</label>
+        <input type="radio" id="bad-rating" name="rating" />
         
         <br />
         <label for="friday-show">Did you watch the show Friday?</label>
-        <input id="friday-show" type="checkbox" />(check for YES. Uncheck for NO.)
+        <input id="friday-show" type="checkbox" /> (check for YES. Uncheck for NO.)
+        
         <br />
         <label for="saturday-show">Did you watch the show on Saturday?</label>
-        <input id="saturday-show" type="checkbox" />(check for YES. Uncheck for NO.)
-      </fieldset>
-        <label for="subscription"> &#9658 Subscribe to newsletter of Shows and Ratings </label>
-        <input id="subscription" type="checkbox" name="subscribe" /> (Optional)
+        <input id="saturday-show" type="checkbox" /> (check for YES. Uncheck for NO.)
         <br />
+      </fieldset>
+      
+      <label for="subscription">&#9658; Subscribe to newsletter of Shows and Ratings</label>
+      <input id="subscription" type="checkbox" name="subscribe" /> (Optional)
+      
+      <br />
       <button type="submit">Submit rating</button>
-      <!-- TODO: Attach labels to controls. Use <label for="id"> or wrap the input inside <label>. -->
+    <!-- TODO: Attach labels to controls. Use <label for="id"> or wrap the input inside <label>. -->
     </form>
   </body>
 </html>
