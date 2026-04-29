@@ -7,4 +7,27 @@
 
 // Add your lines below:
 
-let totalCount = 0;
+const totalCount = 0;
+const firstName = "Vicky";
+const lastName = "Christina";
+const middleName = "Barcelona";
+const favoriteBook = "Tuesdays with Morris";
+const homeTown = "New York";
+
+
+const userAge = 27;
+const playerHealth = 100;
+const zipCode = 90210;
+const outsideTemperature = 64;
+const numberOfLuggage = 3;
+
+const city = "Tokyo";
+const playerHealth = 90;
+const itemsInCart = 10;
+const currentScore = 150;
+const arrivalStatus = "Arrived";
+
+
+export default favoriteBook;
+
+
