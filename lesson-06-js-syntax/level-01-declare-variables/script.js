@@ -7,3 +7,20 @@
 // Add your lines below:
 
 let userName;
+let hairColor;
+let gradeLevel;
+let numberOfPets;
+let numberOfAdults;
+let numberOfChildren;
+let phoneNumber;
+let isSubscribed;
+let deliveryStatus;
+let returnStatus;
+let errorMessage;
+let refundMessage;
+let emailAddress;
+let userAge;
+let customerFirstName;
+let cutomserLastName;
+
+export default customerFirstName;
